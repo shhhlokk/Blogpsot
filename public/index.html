@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogSpot</title>
+    <!-- Font and CSS Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-brand">
+            <h1><a href="/">BlogSpot</a></h1>
+        </div>
+        <!-- This div will be populated by JavaScript with user controls -->
+        <div id="header-controls" class="header-nav">
+            <a href="/login.html" class="home-btn">Login</a>
+            <a href="/register.html" class="create-post-btn">Register</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-content-header">
+            <!-- <h2>BlogSpot</h2> -->
+            <!-- This link is hidden by default and shown for admins by JS -->
+            <a href="/admin.html" class="create-post-btn" id="create-post-link">Create New Post</a>
+        </div>
+
+        <!-- Blog posts will be dynamically loaded here -->
+        <div id="posts-container"></div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
